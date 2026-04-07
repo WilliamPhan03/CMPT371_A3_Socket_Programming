@@ -68,16 +68,30 @@ python client.py test_file.txt
 *Expected Console Output:*
 > Connecting to server at 127.0.0.1:65000... \
 > Connected successfully! \
-> Sending test_file.txt: 100%|██████████| 21.0/21.05 [00:00<00:00, 3.10MB/s] \
+> Sending test_file.txt: 100%| ██████████████████████████████ | 21.0/21.05 [00:00<00:00, 3.10MB/s] \
 > Transfer complete!
 
-### **Step 4: Verify the Transfer & Close the Server**
+### **Step 4 (Optional): Send Another File**
+
+Because the server runs sequentially, you can immediately run Step 3 again with a different file. 
+```bash
+python client.py cat.png
+```
+*Expected Console Output:*
+> Connecting to server at 127.0.0.1:65000... \
+> Connected successfully! \
+> Sending cat.png: 100%| ██████████████████████████████ | 99.5k/99.5k [00:00<00:00, 8.21MB/s] \
+> Transfer complete!
+
+### **Step 5: Verify the Transfer(s)**
 
 1. Watch the synchronized `tqdm` progress bars fill up on both the client and server terminals.  
 2. The client terminal will state: `Transfer complete!`
-3. Navigate to the newly generated `server_data` folder in your project directory to verify the file arrived completely intact and uncorrupted. 
-4. **Continuous Operation:** Because the server runs sequentially, you can immediately run Step 3 again with a different file. 
-5. To gracefully terminate the server, click into the server terminal and press `Ctrl+C`.
+3. Navigate to the newly generated `server_data` folder in your project directory to verify the file(s) arrived completely intact and uncorrupted. 
+
+### **Step 6: Close the Server**
+
+To gracefully terminate the server, click into the server terminal and press `Ctrl+C`.
 
 ## **6\. Academic Integrity & References**
 
