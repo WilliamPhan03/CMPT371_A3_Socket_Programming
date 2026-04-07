@@ -54,20 +54,22 @@ pip install -r requirements.txt
 Ensure you are still in the project directory. The server binds to 127.0.0.1 on port 65000 and will enter a continuous listening loop. 
 ```bash
 python server.py  
-# Console output: "Server started successfully. Listening on 127.0.0.1:65000..."
-# Console output: "Waiting for a client to connect..."
 ```
+*Expected Console Output:*
+> Server started successfully. Listening on 127.0.0.1:65000... \
+> Waiting for a client to connect...
 
 ### **Step 3: Connect Client & Transfer File**
 
 Open a **new** terminal window (keep the server running). Ensure you have placed the file you want to transfer inside the `client_data` folder (e.g., `test_file.txt`). Run the client script followed by your **exact** filename (including the file extension). The following command is for the included test file.
 ```bash
 python client.py test_file.txt 
-# Console output: "Connecting to server at 127.0.0.1:65000..."
-# Console output: "Connected successfully!"
-# Console output: "Sending test_file.txt: 100%|██████████| 21.0/21.05 [00:00<00:00, 3.10MB/s]"
-# Console output: "Transfer complete!"
 ```
+*Expected Console Output:*
+> Connecting to server at 127.0.0.1:65000... \
+> Connected successfully! \
+> Sending test_file.txt: 100%|██████████| 21.0/21.05 [00:00<00:00, 3.10MB/s] \
+> Transfer complete!
 
 ### **Step 4: Verify the Transfer & Close the Server**
 
