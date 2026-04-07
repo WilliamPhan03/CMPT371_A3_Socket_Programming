@@ -68,7 +68,7 @@ python client.py test_file.txt
 *Expected Console Output:*
 > Connecting to server at 127.0.0.1:65000... \
 > Connected successfully! \
-> Sending test_file.txt: 100%| ███████████████████████ | 21.0/21.05 [00:00<00:00, 3.10MB/s] \
+> Sending test_file.txt: 100%| ███████████████████ | 21.0/21.05 [00:00<00:00, 3.10MB/s] \
 > Transfer complete!
 
 ### **Step 4 (Optional): Send Another File**
@@ -80,7 +80,7 @@ python client.py cat.png
 *Expected Console Output:*
 > Connecting to server at 127.0.0.1:65000... \
 > Connected successfully! \
-> Sending cat.png: 100%| ███████████████████████ | 99.5k/99.5k [00:00<00:00, 8.21MB/s] \
+> Sending cat.png: 100%| ███████████████████ | 99.5k/99.5k [00:00<00:00, 8.21MB/s] \
 > Transfer complete!
 
 ### **Step 5: Verify the Transfer(s)**
