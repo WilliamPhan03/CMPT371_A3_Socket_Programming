@@ -71,7 +71,7 @@ python client.py test_file.txt
 > Sending test_file.txt: 100%| ███████████████████ | 21.0/21.05 [00:00<00:00, 3.10MB/s] \
 > Transfer complete!
 
-### **Step 4 (Optional): Send Another File**
+### **Step 4 (Optional): Transfer Another File**
 
 Because the server runs sequentially, you can immediately run Step 3 again with a different file. 
 ```bash
