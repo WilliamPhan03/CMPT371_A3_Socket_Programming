@@ -47,7 +47,6 @@ To run this project, you need:
 Open your terminal and navigate to the project folder. Install the required `tqdm` library. 
 ```bash
 pip install -r requirements.txt 
-# Console output: "Successfully installed tqdm..."
 ```
 
 ### **Step 2: Start the Server**
