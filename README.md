@@ -55,7 +55,7 @@ pip install -r requirements.txt
 Ensure you are still in the project directory. The server binds to 127.0.0.1 on port 65000 and will enter a continuous listening loop. 
 ```bash
 python server.py  
-# Console output: ""Server started successfully. Listening on 127.0.0.1:65000..."
+# Console output: "Server started successfully. Listening on 127.0.0.1:65000..."
 # Console output: "Waiting for a client to connect..."
 ```
 
