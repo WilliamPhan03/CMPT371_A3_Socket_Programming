@@ -89,9 +89,13 @@ python client.py cat.png
 2. The client terminal will state: `Transfer complete!`
 3. Navigate to the newly generated `server_data` folder in your project directory to verify the file(s) arrived completely intact and uncorrupted. 
 
-### **Step 6: Close the Server**
+### **Step 6: Close the Server** 
 
-To gracefully terminate the server, click into the server terminal and press `Ctrl+C`.
+To gracefully terminate the server, click into the server terminal and press `Ctrl+C`.  
+
+
+*Expected Console Output:* 
+> Server shut down.
 
 ## **6\. Academic Integrity & References**
 
