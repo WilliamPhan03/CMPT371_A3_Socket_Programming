@@ -74,7 +74,7 @@ python client.py test_file.txt
 
 1. Watch the synchronized `tqdm` progress bars fill up on both the client and server terminals.  
 2. The client terminal will state: `Transfer complete!`
-3. Navigate to the `server_data` folder in your project directory to verify the file arrived completely intact and uncorrupted. 
+3. Navigate to the newly generated `server_data` folder in your project directory to verify the file arrived completely intact and uncorrupted. 
 4. **Continuous Operation:** Because the server runs sequentially, you can immediately run Step 3 again with a different file. 
 5. To gracefully terminate the server, click into the server terminal and press `Ctrl+C`.
 
