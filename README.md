@@ -9,7 +9,7 @@
 | Name | Student ID | Email |
 | :---- | :---- | :---- |
 | William Phan | 301468740 | lwp1@sfu.ca |
-| Parsa Ghaderi | 301623337 | john.smith@university.edu |
+| Parsa Ghaderi | 301623337 | mpg5@sfu.ca |
 
 ## **1\. Project Overview & Description**
 
@@ -30,7 +30,7 @@ As required by the project specifications, we have identified and handled (or de
 ## **3\. Video Demo**
 
 Our 2-minute video demonstration covering connection establishment, data exchange, and process termination can be viewed below:  
-[**▶️ Watch Project Demo on YouTube**](temp)
+[**▶️ Watch Project Demo on YouTube**](https://youtu.be/W9YvI575nZo)
 
 ## **4\. Prerequisites (Fresh Environment)**
 
