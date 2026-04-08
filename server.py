@@ -66,18 +66,27 @@ def start_server():
         
         # listen for client connections
         server_socket.listen()
+
+        # prevents accept blocking for shutdown 
+        server_socket.settimeout(1.0)
+
         print(f"Server started successfully. Listening on {HOST}:{PORT}...")
         print("Waiting for a client to connect...")
 
         # while loop -> allow multiple files to be sent over one connection -> manual shutdown
         while True:
-            client_connection, client_address = server_socket.accept()
+            try:
+                client_connection, client_address = server_socket.accept()
 
-            # ensures the connection is closed after finishing
-            with client_connection:
-                print(f"Success! Client connected from: {client_address}")
-                
-                receive_file(client_connection)
+                # ensures the connection is closed after finishing
+                with client_connection:
+                    print(f"Success! Client connected from: {client_address}")
+                    
+                    receive_file(client_connection)
+            
+            # allows keyboard interrupt (cross-compatible)
+            except socket.timeout:
+                continue
 
 if __name__ == "__main__":
     try:
